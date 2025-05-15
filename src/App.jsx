@@ -1,18 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import Hero from "./sections/HoroSection";
 
 export default function App() {
   return (
-    <>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </Router>
-    </>
+    <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <Header />
+      <Hero />
+    </div>
   );
 }
