@@ -18,13 +18,13 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-blue-800" : "bg-transparent"
+        scrolled ? "bg-blue-900" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center md:px-4 md:py-6 px-4 py-4">
         {/* Logo */}
-        <a href="#" className="text-2xl font-bold text-white">
-          Klinin
+        <a href="#" className="text-2xl md:text-[27px] font-bold text-white">
+          Klinin Laundry
         </a>
 
         {/* Menu desktop */}
@@ -32,7 +32,7 @@ export default function Header() {
           {menuItems.map((item) => (
             <a
               key={item}
-              href="#"
+              href={`#${item.toLowerCase()}`}
               className="text-lg font-light text-white hover:text-gray-300 transition duration-300"
             >
               {item}
@@ -54,7 +54,7 @@ export default function Header() {
 
       {/* Menu mobile */}
       <nav
-        className={`fixed inset-0 bg-blue-800 flex flex-col items-end pr-6 pt-20 space-y-8
+        className={`fixed inset-0 bg-blue-900 flex flex-col items-end pr-6 pt-20 space-y-8
           transition-opacity duration-300 ease-in-out 
           ${
             menuOpen
@@ -66,7 +66,7 @@ export default function Header() {
         {menuItems.map((item) => (
           <a
             key={item}
-            href="#"
+            href={`#${item.toLowerCase()}`}
             className="text-2xl font-light text-white hover:text-gray-300 transition"
             onClick={() => setMenuOpen(false)}
           >
@@ -79,7 +79,7 @@ export default function Header() {
           href="#"
           className="text-2xl font-bold fixed top-4 left-4 text-white"
         >
-          Klinin
+          Klinin Laundry
         </a>
         <button
           onClick={() => setMenuOpen(false)}

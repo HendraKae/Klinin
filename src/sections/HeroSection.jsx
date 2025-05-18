@@ -4,13 +4,14 @@ import { FiArrowRight } from "react-icons/fi";
 export default function Hero() {
   return (
     <section
-      className="relative h-[730px] md:h-[750px] w-full bg-left  bg-cover"
+      className="relative h-screen md:h-[750px] w-full bg-left  bg-cover"
       style={{ backgroundImage: `url(${HeroImg})` }}
+      id="beranda"
     >
       {/* Overlay bg */}
-      <div className="absolute inset-0 bg-blue-950/70"></div>
+      <div className="absolute inset-0 bg-gray-950/80"></div>
 
-      <div className="relative max-w-7xl mx-auto px-4 py-4 pt-0 md:pt-20 flex flex-col gap-4 md:gap-7 justify-center items-start h-full">
+      <div className="relative max-w-7xl mx-auto px-4 py-4 pt-3 md:pt-20 flex flex-col gap-6 md:gap-7 justify-center items-start h-full">
         <h1 className="text-white font-medium text-4xl md:text-6xl">
           Bersih Maksimal, Tanpa Ribet
         </h1>
@@ -21,7 +22,7 @@ export default function Hero() {
         </p>
         <a
           href="#"
-          className="md:px-10 px-7 py-3 md:py-5 text-white font-light text-[16px] md:text-[19px] bg-blue-500 rounded-[8px] md:rounded-2xl hover:bg-blue-600 transition duration-200"
+          className=" md:px-10 px-7 py-3 md:py-5 text-white font-light text-[16px] md:text-[19px] bg-blue-500 rounded-[8px] md:rounded-2xl hover:bg-blue-600 transition duration-200"
         >
           Pesan Sekarang
         </a>
