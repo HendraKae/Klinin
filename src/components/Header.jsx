@@ -3,7 +3,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuItems = ["Beranda", "Tentang", "Layanan", "Harga", "Kontak"];
+  const menuItems = ["Beranda", "Tentang", "Layanan", "Testimoni", "Kontak"];
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -21,14 +21,14 @@ export default function Header() {
         scrolled ? "bg-blue-900" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center md:px-4 md:py-6 px-4 py-4">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-4 sm:px-10 sm:py-5 ">
         {/* Logo */}
-        <a href="#" className="text-2xl md:text-[27px] font-bold text-white">
+        <a href="#" className="text-2xl lg:text-[27px] font-bold text-white">
           Klinin Laundry
         </a>
 
         {/* Menu desktop */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden lg:flex space-x-8">
           {menuItems.map((item) => (
             <a
               key={item}
@@ -44,7 +44,7 @@ export default function Header() {
         {!menuOpen && (
           <button
             onClick={() => setMenuOpen(true)}
-            className="md:hidden text-3xl text-white"
+            className="lg:hidden text-3xl text-white"
             aria-label="Open menu"
           >
             <FiMenu />
