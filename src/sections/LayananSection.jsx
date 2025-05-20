@@ -1,70 +1,86 @@
-import {
-  FaTshirt,
-  FaTruck,
-  FaClock,
-  FaLeaf,
-  FaBed,
-  FaGem,
-} from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
+
+import LayananImage from "../assets/images/layanankiloan.webp";
+import LayananSatuan from "../assets/images/layanansatuan.webp";
+import LayananSprei from "../assets/images/layanansprei.webp";
+import layananTasSepatu from "../assets/images/layanantas&sepatu.webp";
+import LayananKarpet from "../assets/images/layanankarpet.webp";
+import LayananBoneka from "../assets/images/layananboneka.webp";
 
 const layananList = [
   {
+    img: LayananImage,
     title: "Laundry Kiloan",
     desc: "Cocok untuk kebutuhan sehari-hari, cepat dan ekonomis.",
-    icon: <FaTshirt size={36} className="text-blue-600 mb-4" />,
   },
   {
+    img: LayananSatuan,
     title: "Laundry Satuan",
     desc: "Untuk pakaian spesial seperti jas, kebaya, gaun, dan lainnya.",
-    icon: <FaGem size={36} className="text-blue-600 mb-4" />,
   },
   {
+    img: LayananSprei,
     title: "Bed Cover & Sprei",
     desc: "Cuci bersih dan higienis untuk kenyamanan tidur Anda.",
-    icon: <FaBed size={36} className="text-blue-600 mb-4" />,
   },
   {
-    title: "Antar-Jemput",
-    desc: "Jemput dan antar cucian langsung ke lokasi Anda.",
-    icon: <FaTruck size={36} className="text-blue-600 mb-4" />,
+    img: layananTasSepatu,
+    title: "Tas / Sepatu",
+    desc: "membuatnya tampak seperti baru, bersih, dan harum tanpa merusak bahan.",
   },
   {
-    title: "Express 24 Jam",
-    desc: "Butuh cepat? Kami bisa bantu selesaikan dalam sehari.",
-    icon: <FaClock size={36} className="text-blue-600 mb-4" />,
+    img: LayananKarpet,
+    title: "Karpet",
+    desc: "Karpet bersih dan wangi kembali tanpa perlu lama menunggu.",
   },
   {
-    title: "Ramah Lingkungan",
-    desc: "Kami menggunakan bahan yang aman dan ramah lingkungan.",
-    icon: <FaLeaf size={36} className="text-blue-600 mb-4" />,
+    img: LayananBoneka,
+    title: "Boneka",
+    desc: "bersihkan dengan lembut dan cepat, siap dipeluk kembali di hari yang sama.",
   },
 ];
 
-export default function Layanan() {
+export default function LayananKami() {
   return (
     <section
+      className="relative max-w-7xl mx-auto px-4 sm:px-10 py-4  pt-20 lg:pt-30"
       id="layanan"
-      className="relative max-w-7xl mx-auto px-4 sm:px-10 py-4 sm:py-10 pt-10 lg:pt-20 gap-4 lg:gap-10 pb-20 lg:pb-25"
     >
-      <h2 className="text-blue-900 font-medium text-3xl lg:text-5xl pb-5">
+      <h2 className="text-blue-900 font-medium text-3xl lg:text-5xl pb-3">
         Layanan Kami
       </h2>
-      <p className=" text-gray-700 text-[18px] max-w-[550px] mb-10 ">
+      <p className="text-gray-700 text-[17px] lg:text-[19px] max-w-[580px] mb-10 font-light">
         Kami hadir untuk memenuhi semua kebutuhan laundry Anda, dengan berbagai
         pilihan layanan yang fleksibel dan berkualitas tinggi.
       </p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {layananList.map((layanan, i) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {layananList.map((item, index) => (
           <div
-            key={i}
-            className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-300 text-center"
+            key={index}
+            className="relative group rounded-xl overflow-hidden  transition duration-300 hover:brightness-80"
           >
-            <div className="flex justify-center">{layanan.icon}</div>
-            <h3 className="text-[18px] font-semibold text-blue-800 mb-2 mt-2">
-              {layanan.title}
-            </h3>
-            <p className="text-gray-600 text-[16px]">{layanan.desc}</p>
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-full h-80 object-cover transition duration-300"
+            />
+
+            {/* Gradient Gelap dari Bawah */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40"></div>
+
+            {/* Text Overlay */}
+            <div className="absolute bottom-0 p-6 z-10">
+              <h3 className="text-white font-medium text-[19px] md:text-[21px]">
+                {item.title}
+              </h3>
+              <p className="text-gray-200 font-light text-[17px] md:text-[19px]">
+                {item.desc}
+              </p>
+            </div>
           </div>
         ))}
       </div>

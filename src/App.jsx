@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./sections/HeroSection";
 import About from "./sections/AboutSection";
+import Keunggulan from "./sections/KeunggulanSection";
 import Layanan from "./sections/LayananSection";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       <Header />
       <Hero />
       <About />
+      <Keunggulan />
       <Layanan />
     </div>
   );
