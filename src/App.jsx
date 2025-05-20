@@ -5,6 +5,7 @@ import Keunggulan from "./sections/KeunggulanSection";
 import Layanan from "./sections/LayananSection";
 import Highlight from "./sections/HighlightSection";
 import Testimoni from "./sections/TestimoniSection";
+import LocationMap from "./sections/PaymentAndLocation";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Layanan />
       <Highlight />
       <Testimoni />
+      <LocationMap />
     </div>
   );
 }

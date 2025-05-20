@@ -1,4 +1,4 @@
-import bgWord from "../assets/images/wordbg.jpg";
+import bgWord from "../assets/images/wordbg.webp";
 
 export default function Highlight() {
   return (

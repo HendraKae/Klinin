@@ -63,9 +63,11 @@ export default function LayananKami() {
         {layananList.map((item, index) => (
           <div
             key={index}
-            className="relative group rounded-xl overflow-hidden  transition duration-300 hover:brightness-80"
+            className="relative group rounded-xl overflow-hidden transition duration-300 hover:brightness-80"
+            style={{ willChange: "transform, opacity" }}
           >
             <img
+              loading="lazy"
               src={item.img}
               alt={item.title}
               className="w-full h-80 object-cover transition duration-300"

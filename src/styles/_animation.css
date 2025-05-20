@@ -11,3 +11,18 @@
 .animate-vertical-bounce {
   animation: verticalBounce 1s infinite;
 }
+
+/* animate pay */
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-51%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 12s linear infinite;
+}
