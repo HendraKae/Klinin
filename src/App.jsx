@@ -3,6 +3,8 @@ import Hero from "./sections/HeroSection";
 import About from "./sections/AboutSection";
 import Keunggulan from "./sections/KeunggulanSection";
 import Layanan from "./sections/LayananSection";
+import Highlight from "./sections/HighlightSection";
+import Testimoni from "./sections/TestimoniSection";
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
       <About />
       <Keunggulan />
       <Layanan />
+      <Highlight />
+      <Testimoni />
     </div>
   );
 }

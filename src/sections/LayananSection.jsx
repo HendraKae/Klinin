@@ -47,16 +47,18 @@ const layananList = [
 export default function LayananKami() {
   return (
     <section
-      className="relative max-w-7xl mx-auto px-4 sm:px-10 py-4  pt-20 lg:pt-30"
+      className="relative max-w-7xl mx-auto px-4 sm:px-10 py-0  pt-20 lg:pt-30 mb-[-40px] lg:mb-0 z-22"
       id="layanan"
     >
-      <h2 className="text-blue-900 font-medium text-3xl lg:text-5xl pb-3">
-        Layanan Kami
-      </h2>
-      <p className="text-gray-700 text-[17px] lg:text-[19px] max-w-[580px] mb-10 font-light">
-        Kami hadir untuk memenuhi semua kebutuhan laundry Anda, dengan berbagai
-        pilihan layanan yang fleksibel dan berkualitas tinggi.
-      </p>
+      <div className="flex flex-col lg:flex-row justify-between">
+        <h2 className="text-blue-900 font-medium text-3xl lg:text-5xl pb-3">
+          Layanan Kami
+        </h2>
+        <p className="text-gray-700 text-[17px] lg:text-[19px] max-w-[580px] mb-10 font-light">
+          Kami hadir untuk memenuhi semua kebutuhan laundry Anda, dengan
+          berbagai pilihan layanan yang fleksibel dan berkualitas tinggi.
+        </p>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {layananList.map((item, index) => (
           <div

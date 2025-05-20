@@ -16,7 +16,7 @@ export default function Keunggulan() {
     >
       <div className="flex flex-col lg:flex-row justify-between">
         <h2 className="text-blue-900 font-medium text-3xl lg:text-5xl pb-3">
-          Kenapa Harus Klintin?
+          Kenapa Harus Klinin?
         </h2>
         <p className="text-gray-700 text-[17px] lg:text-[19px] max-w-[480px] mb-10 font-light">
           Kami bukan sekadar tempat laundry – Klintin hadir untuk memberikan

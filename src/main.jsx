@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles/index.css";
 import "./styles/_animation.css";
+import "./styles/_swiper.css";
 import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(

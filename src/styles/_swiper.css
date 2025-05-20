@@ -1,0 +1,17 @@
+/* Pastikan ini sudah kamu impor di App.jsx atau file global kamu */
+
+.swiper-pagination {
+  bottom: 20px !important;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #cbd5e0; /* abu-abu */
+  opacity: 1;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1e40af; /* biru tua */
+  transform: scale(1.2);
+}
