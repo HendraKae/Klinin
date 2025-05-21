@@ -6,7 +6,7 @@ import BCA from "../assets/images/bca.png";
 
 export default function LocationMap() {
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-16 lg:py-24 mb-10 md:mb-15">
       {/* MAP */}
       <div>
         <iframe

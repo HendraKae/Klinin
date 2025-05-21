@@ -11,7 +11,10 @@ export default function Highlight() {
       <h1 className="leading-tight text-white font-medium text-3xl lg:text-5xl pb-3 text-center relative z-2 line">
         Layanan Laundry <br /> Premium & Terpercaya
       </h1>
-      <div className="absolute z-20 bottom-0 left-0 right-0 top-[80%] bg-white shadow-[0_-50px_50px_-0px_rgba(0,0,0,0.5)]"></div>
+      <div
+        id="testimoni"
+        className="absolute z-20 bottom-0 left-0 right-0 top-[80%] bg-white shadow-[0_-50px_50px_-0px_rgba(0,0,0,0.5)]"
+      ></div>
     </section>
   );
 }

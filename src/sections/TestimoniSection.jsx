@@ -31,10 +31,7 @@ const testimonials = [
 
 export default function Testimoni() {
   return (
-    <section
-      className="relative max-w-7xl mx-auto px-4 sm:px-10 py-0 mt-[-65px] lg:mt-0 z-22"
-      id="testimoni"
-    >
+    <section className="relative max-w-7xl mx-auto px-4 sm:px-10 py-0 mt-[-85px] lg:mt-0 z-22">
       <h2 className="text-blue-900 font-medium text-3xl lg:text-5xl pb-3">
         Apa kata Pelanggan Klinin?
       </h2>
