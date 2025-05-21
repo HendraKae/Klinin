@@ -5,7 +5,7 @@ import WhatsappIcon from "../assets/icons/whatsapp.svg";
 export default function Hero() {
   return (
     <section
-      className="relative h-screen md:h-[750px] w-full bg-left  bg-cover"
+      className="relative h-screen lg:h-[750px] w-full bg-left  bg-cover"
       style={{ backgroundImage: `url(${HeroImg})` }}
       id="beranda"
     >

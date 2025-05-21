@@ -32,11 +32,31 @@ const testimonials = [
 export default function Testimoni() {
   return (
     <section className="relative max-w-7xl mx-auto px-4 sm:px-10 py-0 mt-[-85px] lg:mt-0 z-22">
-      <h2 className="text-blue-900 font-medium text-3xl lg:text-5xl pb-3">
+      {/* Mobile version */}
+      <h2
+        data-aos="fade-up"
+        className="text-blue-900 font-medium text-3xl lg:text-5xl pb-3 block lg:hidden"
+      >
         Apa kata Pelanggan Klinin?
       </h2>
+      <p
+        data-aos="fade-up"
+        className="text-gray-700 text-[17px] lg:text-[19px] max-w-[580px] mb-10 font-light block lg:hidden"
+      >
+        Lihat apa kata mereka yang sudah merasakan laundry bareng Klinin.
+      </p>
 
-      <p className="text-gray-700 text-[17px] lg:text-[19px] max-w-[580px] mb-10 font-light">
+      {/* Desktop version */}
+      <h2
+        data-aos="fade-right"
+        className="text-blue-900 font-medium text-3xl lg:text-5xl pb-3 hidden lg:block"
+      >
+        Apa kata Pelanggan Klinin?
+      </h2>
+      <p
+        data-aos="fade-right"
+        className="text-gray-700 text-[17px] lg:text-[19px] max-w-[580px] mb-10 font-light hidden lg:block"
+      >
         Lihat apa kata mereka yang sudah merasakan laundry bareng Klinin.
       </p>
 
@@ -53,7 +73,7 @@ export default function Testimoni() {
       >
         {testimonials.map((t, index) => (
           <SwiperSlide key={index}>
-            <div className="min-h-[350px]">
+            <div className="min-h-[350px]" data-aos="fade-up">
               <div className="bg-white rounded-3xl  text-center p-3 md:p-6 min-h-[300px] flex flex-col justify-center items-center border-[0.5px] border-blue-800">
                 <img
                   src={t.image}

@@ -2,7 +2,7 @@ import { FaWhatsapp, FaMapMarkerAlt, FaRegEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <section className="bg-blue-950" id="kontak">
+    <section data-aos="fade-up" className="bg-blue-950" id="kontak">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-10 py-10 lg:py-20 ">
         <div className="flex justify-between items-start flex-col md:flex-row">
           <a href="#" className="text-3xl lg:text-[35px] font-bold text-white">
@@ -54,14 +54,14 @@ export default function Footer() {
                 <br /> Indonesia
               </p>
               <a
-                href="#beranda"
+                href="#"
                 className="text-[18px] font-light text-white hover:text-gray-300 transition duration-300 flex items-center gap-2"
               >
                 <FaWhatsapp className="text-white h-7 w-7 flex-shrink-0" />{" "}
                 +1519 901222
               </a>
               <a
-                href="#beranda"
+                href="#"
                 className="text-[18px] font-light text-white hover:text-gray-300 transition duration-300 flex items-center gap-4"
               >
                 <FaRegEnvelope className="text-white h-6 w-6 flex-shrink-0" />{" "}
@@ -70,7 +70,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className="pt-10 md:pt-0 text-lg lg:text-[22px] text-white hover:text-gray-300">
+        <p className="pt-10 md:pt-0 text-lg lg:text-[22px]  text-white hover:text-gray-300">
           Copyright © Klinin Laundry All rights reserved.
         </p>
       </div>

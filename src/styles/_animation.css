@@ -26,3 +26,18 @@
 .animate-scroll-left {
   animation: scroll-left 12s linear infinite;
 }
+
+/* water splash */
+@keyframes waterDrop {
+  0%,
+  100% {
+    border-radius: 80% 80% 0 0 / 40% 40% 0 0;
+  }
+  50% {
+    border-radius: 60% 60% 0 0 / 20% 20% 0 0;
+  }
+}
+
+.animate-waterDrop {
+  animation: waterDrop 0.1s ease-in-out infinite;
+}

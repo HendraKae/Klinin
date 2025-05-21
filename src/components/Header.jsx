@@ -21,7 +21,7 @@ export default function Header() {
         scrolled ? "bg-blue-900" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-4 sm:px-10 sm:py-5 ">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-4 sm:px-10 sm:py-5">
         {/* Logo */}
         <a href="#" className="text-2xl lg:text-[27px] font-bold text-white">
           Klinin Laundry
@@ -54,7 +54,7 @@ export default function Header() {
 
       {/* Menu mobile */}
       <nav
-        className={`fixed inset-0 bg-blue-900 flex flex-col items-end pr-6 pt-20 space-y-8
+        className={`fixed inset-0 bg-blue-900 flex flex-col items-end pr-5 sm:pr-11 pt-20 space-y-8
           transition-opacity duration-300 ease-in-out 
           ${
             menuOpen
@@ -77,13 +77,13 @@ export default function Header() {
         {/* Tombol close fixed */}
         <a
           href="#"
-          className="text-2xl font-bold fixed top-4 left-4 text-white"
+          className="text-2xl font-bold fixed top-4 sm:top-5 left-4 sm:left-10 text-white"
         >
           Klinin Laundry
         </a>
         <button
           onClick={() => setMenuOpen(false)}
-          className="fixed top-4 right-4 text-4xl text-white z-50"
+          className="fixed top-4 sm:top-5 right-3 sm:right-9 text-4xl text-white z-50"
           aria-label="Close menu"
         >
           <FiX />

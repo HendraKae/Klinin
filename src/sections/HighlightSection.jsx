@@ -8,7 +8,10 @@ export default function Highlight() {
     >
       <div className="absolute inset-0 bg-gray-950/30 z-1"></div>
       <div className="absolute z-20 top-0 left-0 right-0 bottom-[80%] bg-white  shadow-[0_50px_50px_-0px_rgba(0,0,0,0.5)]"></div>
-      <h1 className="leading-tight text-white font-medium text-3xl lg:text-5xl pb-3 text-center relative z-2 line">
+      <h1
+        data-aos="zoom-in"
+        className="leading-tight text-white font-medium text-3xl lg:text-5xl pb-3 text-center relative z-2 line"
+      >
         Layanan Laundry <br /> Premium & Terpercaya
       </h1>
       <div

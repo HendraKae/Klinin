@@ -51,10 +51,32 @@ export default function LayananKami() {
       id="layanan"
     >
       <div className="flex flex-col lg:flex-row justify-between">
-        <h2 className="text-blue-900 font-medium text-3xl lg:text-5xl pb-3">
+        {/* Mobile */}
+        <h2
+          data-aos="fade-up"
+          className="text-blue-900 font-medium text-3xl lg:text-5xl pb-3 block lg:hidden"
+        >
           Layanan Kami
         </h2>
-        <p className="text-gray-700 text-[17px] lg:text-[19px] max-w-[580px] mb-10 font-light">
+        <p
+          data-aos="fade-up"
+          className="text-gray-700 text-[17px] lg:text-[19px] max-w-[580px] mb-10 font-light block lg:hidden"
+        >
+          Kami hadir untuk memenuhi semua kebutuhan laundry Anda, dengan
+          berbagai pilihan layanan yang fleksibel dan berkualitas tinggi.
+        </p>
+
+        {/* Desktop */}
+        <h2
+          data-aos="fade-right"
+          className="text-blue-900 font-medium text-3xl lg:text-5xl pb-3 hidden lg:block"
+        >
+          Layanan Kami
+        </h2>
+        <p
+          data-aos="fade-left"
+          className="text-gray-700 text-[17px] lg:text-[19px] max-w-[580px] mb-10 font-light hidden lg:block"
+        >
           Kami hadir untuk memenuhi semua kebutuhan laundry Anda, dengan
           berbagai pilihan layanan yang fleksibel dan berkualitas tinggi.
         </p>
@@ -62,6 +84,7 @@ export default function LayananKami() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {layananList.map((item, index) => (
           <div
+            data-aos="fade-up"
             key={index}
             className="relative group rounded-xl overflow-hidden transition duration-300 hover:brightness-80"
             style={{ willChange: "transform, opacity" }}
